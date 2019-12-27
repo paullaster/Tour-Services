@@ -1,8 +1,8 @@
 /* this is the mother style sheet linked to all the related pages*/
 /* this css is written using class and id to enable flexibility and responsiveness*/
 /*rules  specified at a class level ovewrite rules at an element level and rules within an id overwrite rules within a class*/
-*{
-    margin: 0;      /*the application of universal selector selects all the elements and apply the rules specified in them incase the rules are not not applied at on that element*/
+*, *::after, *::before{
+    margin: 0;
     padding: 0;
     box-sizing: inherit;
 }
@@ -125,7 +125,7 @@ html{
    /* background-color: black;*/
 }
 .navigation-header-menus-list-btn:hover::after{
-    transform: scaleX(1.4) scaleY(1.6);
+    transform: scaleX(.4) scaleY(.6);
     opacity: 0;
 }
 .clearFix::after{       /*the clearFix hear a programmer defined class to make it easy to apply the related rules*/
