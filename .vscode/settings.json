@@ -1,0 +1,12 @@
+{
+    "workbench.colorCustomizations": {
+        "tab.unfocusedActiveBorder": "#fff0",
+        "activityBar.background": "#11059E",
+        "titleBar.activeBackground": "#1807DD",
+        "titleBar.activeForeground": "#FCFCFF"
+    },
+    "vscode-janus-debug.uploadOnSave": [
+        "canvas"
+    ],
+    "liveServer.settings.port": 5501
+}

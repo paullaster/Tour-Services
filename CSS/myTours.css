@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inset;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: lato;
+    box-sizing: border-box;
+    padding: 3rem;
+
+}
+.tablePlacement{
+    width: 100%;
+    height: 150vh;
+    position: relative;
+    background-color: rgba(31, 31, 32, 0.801);
+    padding-top: 14rem;
+}
+.displayMyTours{
+    /* position: absolute;
+    top: 30rem; */
+    /* left: 12.5rem; */
+    border: .1rem solid white;
+    width: 100%;
+    height: auto;
+    
+}
+/* .displayMyTours, .sdate, .edate{
+    border: .1rem solid white;
+    
+} */
+.tcaption{
+    color: whitesmoke;
+    margin-bottom: .9rem;
+    text-transform:capitalize ;
+    font-weight: 800;
+    font-size: 2.6rem;
+    letter-spacing: .2rem;
+    word-spacing: .2rem;
+}
+.historyHeading{
+    border-bottom: .1rem solid white;
+}
+.sdate{
+    color: whitesmoke;
+    text-transform: capitalize;
+    /* position: absolute;
+    left: 1rem;
+    top:6rem; */
+    letter-spacing: .2rem;
+    font-size: 1.8rem;
+    border-right: .2rem solid white;
+    border-bottom: .2rem solid white;
+}
+.edate{
+    color: whitesmoke;
+    text-transform: capitalize;
+    /* position: absolute;
+    left: 18rem;
+    top: 6rem; */
+    letter-spacing: .2rem;
+    font-size: 1.8rem;
+    border-right: .2rem solid white;
+    border-bottom: .2rem solid white;
+}
+.destination{
+    color: whitesmoke;
+    text-transform: capitalize;
+    /* position: absolute;
+    left: 30rem;
+    top: 6rem; */
+    letter-spacing: .2rem;
+    font-size: 1.8rem;
+    border-right: .2rem solid white;
+    border-bottom: .2rem solid white;
+}
+.typeOfAdventure{
+    color: whitesmoke;
+    text-transform: capitalize;
+    /* position: absolute;
+    left: 43rem;
+    top: 6rem; */
+    letter-spacing: .2rem;
+    font-size: 1.8rem;
+    border-right: .2rem solid white;
+    border-bottom: .2rem solid white;
+}
+.category{
+    color: whitesmoke;
+    text-transform: capitalize;
+    /* position: absolute;
+    left: 63rem;
+    top: 6rem; */
+    letter-spacing: .2rem;
+    font-size: 1.8rem;
+    border-right: .2rem solid white;
+    border-bottom: .2rem solid white;
+
+}
+.status{
+    color: whitesmoke;
+    text-transform: capitalize;
+    /* position: absolute;
+    left: 74rem;
+    top: 6rem; */
+    letter-spacing: .2rem;
+    font-size: 1.8rem;
+    border-right: .2rem solid white;
+    border-bottom: .2rem solid white;
+}
+.cost{
+    color: whitesmoke;
+    text-transform: capitalize;
+    /* position: absolute;
+    left: 84rem;
+    top: 6rem; */
+    letter-spacing: .2rem;
+    font-size: 1.8rem;
+    border-bottom: .2rem solid white;
+}
+.data{
+    color: white;
+    font-size: 1.4rem;
+    border-bottom: .2rem solid white;
+    text-transform: capitalize;
+}

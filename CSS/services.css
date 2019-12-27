@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    padding: 3rem;
+    font-family: lato;
+
+}
+.main-section-service{
+    background-color: rgba(0, 0, 0, 0.479);
+    position: relative;
+    height: 200vh;
+    
+}
+.main-section-headin{
+    margin: 3rem;
+    padding: 4rem;
+    
+}
+.main-section-heading{
+    margin: 10rem;
+    display: block;
+    text-transform: capitalize;
+    color: whitesmoke;
+    position: absolute;
+    left: 10rem;
+    top: 10rem;
+    font-weight: 900;
+    letter-spacing: 2rem;
+    font-size: 5rem;
+    padding: 2rem;
+    animation-name: moveInLeft;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+}
+.sub-section-heading{
+    display: block;
+    text-transform: capitalize;
+    color: whitesmoke;
+    position: absolute;
+    left: 10rem;
+    top: 40rem;
+    font-weight: 800;
+    font-size:4rem;
+    letter-spacing: 1.5rem;
+    animation-name: moveInUp;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+}
+.sub-form{
+    position: absolute;
+    top: 70rem;
+    background-color: rgba(0, 0, 0, 0.808);
+    height: 87vh;
+    width: 94vw;
+}
+.form-destination{
+    text-transform: capitalize;
+    font-size: 2rem;
+    color: whitesmoke;
+    margin: 3rem;
+    height: 10rem;
+}
+.custom-btn{
+    margin: 3rem;
+    width: 8rem;
+    border-radius: 4px;
+    height: 4rem;
+}
+#col-form-destination{
+    border-radius: 4px;
+    height: 4rem;
+}
+#categories-form{
+    border-radius: 4px;
+    height: 4rem;
+}
+#min-price{
+    border-radius: 4px;
+    height: 4rem;
+}
+#max-price{
+    border-radius: 4px;
+    height: 4rem;
+}
+@keyframes moveInLeft{
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+    80% {
+        transform: translateX(1.8rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes moveInUp{
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+    80% {
+        transform: translateY(1.8rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-100);
+    }
+}

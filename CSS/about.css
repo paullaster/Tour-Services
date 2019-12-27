@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding:0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: lato;
+}
+.main-section-service{
+    background-color: rgba(0, 0, 0, 0.479);
+    position: relative;
+    height: 200vh;
+    
+}
+.main-section-headin{
+    margin: 3rem;
+    padding: 4rem;
+    
+}
+.main-section-heading{
+    margin: 10rem;
+    display: block;
+    text-transform: capitalize;
+    color: whitesmoke;
+    position: absolute;
+    left: 20rem;
+    top: 10rem;
+    font-weight: 900;
+    letter-spacing: 2rem;
+    font-size: 5rem;
+    padding: 2rem;
+    animation-name: moveInLeft;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+}
+.sub-section-heading{
+    display: block;
+    text-transform: capitalize;
+    color: whitesmoke;
+    position: absolute;
+    left: 35rem;
+    top: 40rem;
+    font-weight: 800;
+    font-size:4rem;
+    letter-spacing: 1.5rem;
+    animation-name: moveInUp;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+}
+.book-now{
+    background-color: rgba(0, 0, 0, 0.863);
+    position: absolute;
+    top: 70rem;
+    height: 87vh;
+    width: 94vw;
+}
+.book-now-link{
+    margin-top: 80rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 3.5rem;
+    font-weight: 800;
+    background: orange;
+    margin-left: 50rem;
+    border-radius: 2rem;
+    height: 10rem;
+    margin-bottom: 30rem;
+    animation-name: moveInUp;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+}
+.destination-selection{
+    position: absolute;
+    top: 110rem;
+    left: 38rem;
+    color: whitesmoke;
+    letter-spacing: 1rem;
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+.destination-selct-span-style{
+    font-size: 2rem;
+    left: 1rem;
+}
+.select-btn-tours{
+    position: absolute;
+    top: 115rem;
+}
+#select-our-tour-areas{
+    background-color:rgba(255, 255, 255, 0.205);
+    position:absolute;
+    left: 40rem;
+    height:5rem;
+    width:30rem;
+    font-size:2rem;
+    border: none;
+}
+.go-select-submit-btn{
+    width:10rem;
+    height:5rem;
+    background-color: rgba(235, 145, 10, 0.308);
+    position: absolute;
+    left: 70rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 3rem;
+    color: rgba(0, 0, 255, 0.801);
+    border: none;
+    letter-spacing: 2rem;
+}
+.info-section{
+    margin: 15rem;
+}
+.view-our-local-tours{
+    text-decoration: none;
+    font-size: 3rem;
+    background-color: rgba(20, 20, 20, 0.705);
+    border-block-end-width: 3rem;
+    /* clip-path: polygon(60 0, 100% 0, 100% 75vh, 60 100%); */
+    color: whitesmoke;
+    display: block;
+    width: 50rem;
+    height: 10rem;
+    position: absolute;
+    top: 60rem;
+    left: 40rem;
+    border-bottom-right-radius: 5rem;
+    border-bottom-left-radius: 5rem;
+}
+.view-our-local-tours:hover{
+    background: local;
+    color: rgba(0, 0, 255, 0.801);
+    font-size: 3.5rem;
+    animation-name: moveInUp;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+.our-local-tours-positioning{
+    text-transform: capitalize;
+    position: absolute;
+    top: 3rem;
+    left:11rem;
+}
+.about-us-info{
+    margin-bottom: 6rem;
+    background: rgba(0, 0, 0, 0.295);
+    width: 45rem;
+    height: 15rem;
+    position: absolute;
+    top: 84rem;
+    left: 45rem;
+    padding: 1rem;
+    letter-spacing: .2rem;
+}
+.infor{
+    font-size: 1.6rem;
+    color: whitesmoke;
+    word-spacing: .7rem;
+}
+@keyframes moveInUp{
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+    80% {
+        transform: translateY(1.8rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-100);
+    }
+}

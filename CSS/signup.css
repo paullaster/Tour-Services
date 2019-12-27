@@ -1,0 +1,193 @@
+*{
+    margin:0;
+    padding:0;
+    
+}
+html{
+    font-size: 62.5%;
+    
+}
+body{
+    text-align: center;
+    font-family: lato;
+    padding: 3rem;
+    padding: 3rem;
+}
+.main-sign-up{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 200vh;
+}
+.main-heading-sign-up{
+    margin: 4rem;
+}
+.main-sign-up-heading{
+    margin: 4rem;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+    font-weight: 900;
+    color:whitesmoke;
+    text-align: center;
+}
+.form-main-sign-up{
+    background-color: rgba(0, 0, 0, 0.801);
+    width: 50vw;
+    margin-left: 40rem;
+    height: 140vh;
+}
+.name-sign-up{
+    font-size: 2.8rem;
+    text-transform: capitalize;
+    margin: 5rem;
+    color:whitesmoke;
+
+}
+.email-sign{
+    font-size: 2.8rem;
+    text-transform: capitalize;
+    margin: 5rem;
+    color:whitesmoke;
+
+}
+.username-sign-up{
+    font-size: 2.8rem;
+    text-transform: capitalize;
+    margin: 5rem;
+    color:whitesmoke;
+}
+.password-sign-up{
+    font-size: 2.8rem;
+    text-transform: capitalize;
+    margin: 5rem;
+    color:whitesmoke;
+}
+.gender-signup{
+    font-size: 2.8rem;
+    text-transform: capitalize;
+    margin: 5rem;
+    color:whitesmoke;
+}
+.female{
+    /*padding: 3rem;*/
+   font-size: 2.4rem; 
+   text-transform: capitalize;
+   margin: 3rem;
+   color:whitesmoke;
+
+}
+.male{
+    color: whitesmoke;
+   /* padding: 3rem;*/
+   /** padding-left: 6rem;
+    margin-left: 3rem;**/
+    font-size: 2.4rem; 
+   text-transform: capitalize;
+   margin: 3rem;
+}
+#name-input-sign-up{
+    padding: 2rem;
+    border-radius: 3rem;
+    margin:4rem;
+}
+#email-input-sign-up{
+    padding: 2rem;
+    border-radius: 3rem;
+    margin:4rem;
+}
+#username-input-sign-up{
+    padding: 2rem;
+    border-radius: 3rem;
+    margin:4rem;
+}
+#password-input-sign-up{
+    padding: 2rem;
+    margin:4rem;
+    border-radius: 3rem;
+
+}
+.submit-signup{
+    margin: 4rem;
+    border-radius: 3rem;
+    height: 6rem;
+    width: 20rem;
+    color: whitesmoke;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    letter-spacing: 1rem;
+   background: rgba(3, 3, 8, 0.623);
+   right: 20rem;
+   animation-name: moveInUp;
+   animation-duration: 5s;
+   animation-timing-function: ease-out;
+}
+.float-link-login{
+    position: relative;
+}
+.login-link{
+   font-weight: 900;
+   font-size: 2.5rem;
+   color:whitesmoke;
+   text-decoration: none;
+   letter-spacing: 1.5rem;
+   text-transform: capitalize;
+   display: inline-block;
+   background-color: rgba(3, 3, 7, 0.664);
+   height: 6rem;
+   width: 20rem;
+   border-radius: 3rem;
+   position: absolute;
+   left: 25rem;
+   border: 2px white solid;
+   animation-name: moveInLeft;
+   animation-duration: 5s;
+   animation-timing-function: ease-out;
+}
+.login-link-positioning{
+position: absolute;
+left: 4.3rem;
+top: 1.5rem;
+}
+
+@keyframes moveInLeft{
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+    80% {
+        transform: translateX(1.8rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes moveInUp{
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+    80% {
+        transform: translateY(1.8rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-100);
+    }
+}
+
+/**@keyframes moveInDown{
+    0% {
+        opacity: 0;
+        transform: translateY(100);
+    }
+    80% {
+        transform: translateY(1.8rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}**/

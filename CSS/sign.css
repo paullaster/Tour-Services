@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html{
+    font-size: 62.5%;
+
+}
+body{
+    font-family: lato;
+    text-align: center;
+    padding: 3rem;
+}
+.main-sign{
+    background-color: rgba(0, 0, 0, 0.719);
+    height: 100vh;
+   /* margin-left: 40rem;*/
+    margin-top: 20rem;
+}
+.heading-main-sign{
+    text-transform: capitalize;
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: 1rem;
+}
+.heading-main-sign{
+    padding: 3rem;
+    margin: 3rem;
+    color: whitesmoke;
+    animation-name: moveInDown;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+}
+.main-form-sign{
+    direction: ltr;
+    background-color: rgba(0, 0, 0, 0.801);
+    margin: 2rem;
+}
+.main-sign-name{
+    font-size: 2.6rem;
+    padding: 4rem;
+    text-transform: capitalize;
+    color: whitesmoke;
+    animation-name: moveInDown;
+    animation-duration: 10s;
+    animation-timing-function: ease-out;
+}
+#main-sign-name-input{
+    margin: 4rem;
+    border-radius: 4rem;
+    height: 3rem;
+    animation-name: moveInUp;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+}
+.main-sign-password{
+    font-size: 2.6rem;
+    padding: 4rem;
+    text-transform: capitalize;
+    color: whitesmoke;
+    animation-name: moveInDown;
+    animation-duration: 10s;
+    animation-timing-function: ease-out;
+
+}
+#main-sign-password-input{
+    margin: 4rem;
+    border-radius: 4rem;
+    height: 3rem;
+    border: .1rem white solid;
+    animation-name: moveInUp;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+}
+.main-sign-submit{
+    margin: 4rem;
+    border-radius: 3rem;
+    height: 6rem;
+    width: 20rem;
+    color: whitesmoke;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    letter-spacing: 1rem;
+   background: rgba(3, 3, 8, 0.623);
+   right: 20rem;
+   animation-name: moveInLeft;
+   animation-duration: 5s;
+   animation-timing-function: ease-out;
+}
+.forgotpassword{
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.6rem;
+    padding: 2rem;
+    animation-name: moveInLeft;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+}
+.signup-sub-btn{
+    color: white;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    background-color: rgba(79, 77, 80, 0.658);
+    padding: 1rem;
+    border-radius: 2rem;
+    animation-name: moveInLeft;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+}
+@keyframes moveInLeft{
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+    80% {
+        transform: translateX(1.8rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes moveInUp{
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+    80% {
+        transform: translateY(1.8rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(100);
+    }
+}
+@keyframes moveInDown{
+    0% {
+        opacity: 0;
+        transform: translateY(1rem);
+    }
+    80% {
+        transform: translateY(1.8rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-100);
+    }
+}

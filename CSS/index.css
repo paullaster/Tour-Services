@@ -1,0 +1,129 @@
+html{
+    font-size: 62.5%;
+}
+body{
+text-align: center;
+padding: 3rem;
+}
+.main-section-service{
+    background-color: rgba(0, 0, 0, 0.479);
+    margin-top: 2rem;
+    position: relative;
+    height: 200vh;
+    
+}
+.main-section-headin{
+    /* margin: 3rem;
+    padding: 1rem; */
+    background: repeating-linear-gradient(to bottom, black, red);
+    position: absolute;
+    top: 15rem;
+    height: 70vh;
+    width: 100%;
+    animation-name: headerMoveLeft;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+    animation-play-state: running;
+    
+}
+.main-section-heading{
+    margin: 5rem;
+    display: block;
+    text-transform: uppercase;
+    color: whitesmoke;
+    /* position: absolute;
+    left: 2rem;
+    top: 0; */ 
+    font-weight: 900;
+    letter-spacing: 6rem;
+    font-size: 10rem;
+    padding: 1rem;
+    animation-name: moveInLeft;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+    text-shadow: 0 0 1rem rgb(0,0,0);
+}
+.sub-section-heading{
+    display: block;
+    text-transform: uppercase;
+    color: whitesmoke;
+    /* position: absolute;
+    left: 19rem;
+    top: 40rem; */
+    font-weight: 900;
+    font-size:6rem;
+    letter-spacing: 1.5rem;
+    animation-name: moveInUp;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+    text-shadow: 0 0 1rem rgb(0,0,0);
+}
+.book-now{
+    background:linear-gradient(to right, rgba(2, 0, 0, 0.9),rgba(0, 9, 12, 0.609));
+    position: absolute;
+    top: 108rem;
+    height: 87vh;
+    width: 94vw;
+}
+.book-now-link{
+    position: absolute;
+    display: inline-block;
+    margin-top: 20rem;
+    left: 50rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 3.5rem;
+    font-weight: 800;
+    box-shadow: 0 0 2rem 0 rgb(20,20,20,);
+    background: rgba(187, 186, 184, 0.801);
+    border-radius: 2rem;
+    height: 10rem;
+    width: 30rem;
+    /*margin-bottom: 30rem;*/
+    animation-name: moveInUp;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+    animation-name: glowing;
+    animation-duration:2s;
+    animation-timing-function:ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.book-now-link-position{
+    position: absolute;
+    left: 4rem;
+    top: 2.5rem;
+}
+@keyframes moveInUp{
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+    80% {
+        transform: translateY(1.8rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-100);
+    }
+}
+@keyframes glowing {
+    from {
+      text-shadow: 0 0 10px wheat, 0 0 20px teal, 0 0 30px red, 0 0 40px magenta, 0 0 50px black, 0 0 60px blue, 0 0 70px brown;
+    }
+    to {
+      text-shadow: 0 0 20px wheat, 0 0 30px wheat, 0 0 40px yellow, 0 0 50px maroon, 0 0 60px orangered, 0 0 70px teal, 0 0 80px pink;
+    }
+  }
+  @keyframes headerMoveLeft{
+   from{
+       background: repeating-linear-gradient(to bottom, rgba(135, 207, 235, 0.6),rgba(119, 119, 119, 0.5)), repeating-linear-gradient(to bottom,orange,rgba(29, 22, 22, 0.801));
+   }
+ to{
+     background:repeating-linear-gradient( to bottom, rgba(0, 128, 0, 0.5), rgba(172, 255, 47, 0.5)), repeating-linear-gradient(to bottom,blueviolet,indigo);
+ }
+  }

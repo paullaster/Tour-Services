@@ -1,0 +1,227 @@
+/* this is the mother style sheet linked to all the related pages*/
+/* this css is written using class and id to enable flexibility and responsiveness*/
+/*rules  specified at a class level ovewrite rules at an element level and rules within an id overwrite rules within a class*/
+*{
+    margin: 0;      /*the application of universal selector selects all the elements and apply the rules specified in them incase the rules are not not applied at on that element*/
+    padding: 0;
+    box-sizing: inherit;
+}
+html{
+    font-size: 62.5%;
+}
+ body{
+        box-sizing: border-box;
+        padding: 3rem;
+        font-family: lato;
+       background-image:url(../IMAGES/bgimage.jpg);
+       background-size: cover;
+       /*background-repeat:no-repeat ;*/
+       font-weight: 500;
+    }
+    
+.header{
+        background-image: linear-gradient(to right bottom, rgba(144, 238, 144, 0.521), rgba(0, 100, 0, 0.473)), url(../IMAGES/Mount-Everest.jpg);
+        height: 50vh;
+        background-size: cover;
+        background-position: top;
+        position: relative;
+        animation-name: moveInUp;
+        animation-duration: 5s;
+        animation-timing-function: ease-in;
+        box-shadow: 0 0 2rem 0 black;
+        border-radius: 3rem;
+        backface-visibility: hidden;
+    }
+
+
+.header-logo{
+    height: 4rem;
+    margin-left: 3rem;
+}
+
+.header-logo-btn{
+    display: block;
+}
+/* .header-logo-btn:hover{
+    background: linear-gradient(to right, rgb(171, 255, 46),rgb(154, 205, 50));
+} */
+.logo{
+    display: block;
+    /*margin: 3rem;*/
+    height: 4rem;
+    position: absolute;
+    top: 8rem;
+    left: .1rem;
+    animation-name: moveInLeft;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+    transition: all 2s ease;
+}
+.logo:hover{
+    height: 6rem;
+    background: linear-gradient(to right, rgb(1, 105, 105),rgb(48, 233, 214));
+    border-radius: 1rem;
+    padding: .9rem;
+    box-shadow: 0 0 1rem 0 rgb(20,20,20);
+    transform: translateY(-.5rem);
+}
+.navigation-header{
+    padding: 3rem;
+}
+.navigation-header-menus
+{
+    list-style: none;
+    
+}
+.navigation-header-menu-list{
+    /* display: block; */
+    text-transform: uppercase;
+    float: left;
+    
+}
+.navigation-header-menus-list-btn:link, .navigation-header-menus-list-btn:visited{
+    /*margin-right: 5rem;*/
+    display: block;
+    padding: 2rem;
+    margin-left: 2rem;
+    font-size: 1.6rem;
+    letter-spacing: .3rem;
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: 900;
+    text-shadow: 0 0 1rem rgb(0,0,0);
+    border: 2px rgba(9, 145, 9, 0.055) solid;
+    animation-name: moveInLeft;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+    transition: all 1s ease;
+    backface-visibility: hidden;
+}
+.navigation-header-menus-list-btn:first-child{
+    margin-left: 7rem;
+}
+.navigation-header-menus-list-btn:hover{
+    background-color: teal;
+    border-radius: 1rem;
+    transform: translateY(-.5rem);
+    box-shadow: 0 0 1rem 0 rgb(20, 20, 20);
+}
+.navigation-header-menus-list-btn:active{
+    background-color: black;
+}
+.navigation-header-menus-list-btn::after{
+    content: "";
+    display: block;
+    background-color: teal;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; 
+    backface-visibility: hidden;
+    transition: all 1.5s ease;
+   /* background-color: black;*/
+}
+.navigation-header-menus-list-btn:hover::after{
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+.clearFix::after{       /*the clearFix hear a programmer defined class to make it easy to apply the related rules*/
+    content:"";
+   clear:both;          /**this clear the floated navigation and the floated sign in link to be height**/
+   display:table;       
+      
+ }
+.header-btn{
+    
+    font-weight: 600;
+    
+
+}
+.header-sign-btn:link, .header-sign-btn:visited{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1.6rem;
+    border: 1px #0991090e solid;
+     text-transform: uppercase;
+    float: right;
+    padding: 3rem;
+    border-radius: 3rem;
+    text-shadow: 0 0 1rem rgb(0,0,0);
+    position: absolute;
+    right: 1rem;
+    top: 6rem;
+    margin-right: 3rem;
+    display: block;
+    animation-name: moveInUp;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    background-color: rgba(0, 0, 0, 0.144);
+    transition: all 1s ease;
+}
+.header-sign-btn:hover{
+    background-color: teal;
+    transform: translateY(-.3rem);
+    box-shadow: 0 0 2rem 0 rgb(20, 20, 20);
+}
+.header-sign-btn::after{
+    content: "";
+    background-color: teal;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 1s ease;
+}
+.header-sign-btn:hover::after{
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+/* this is a sub menu that only appears when the mouse is over the services button */
+ /* .sub-menu-my-tours{
+     display: none;
+ }
+ .navigation-header-menus-list-btn:hover .sub-menu-my-tours .myTours .navigation-header--sub-menus-list-btn{
+     display: block;
+ } */
+/*
+.sub-menu-my-tours .myTours:hover{
+    
+} */
+
+
+@keyframes moveInLeft{
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+    80% {
+        transform: translateX(1.8rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes moveInUp{
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+    80% {
+        transform: translateY(1.8rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-100);
+    }
+}
